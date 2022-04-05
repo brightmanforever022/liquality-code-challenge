@@ -2,6 +2,12 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Purpose
+
+This project was for the test of liquality agency.
+It gets marketing info per selected interval value, which are 5s, 10s and 15s.
+Here, it uses custom hook and react-query to cache data.
+
 ## Available Scripts
 
 In the project directory, you can run:
