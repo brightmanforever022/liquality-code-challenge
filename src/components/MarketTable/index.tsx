@@ -1,14 +1,14 @@
 import React from "react";
-
+import { Table } from "react-bootstrap";
 import { useGetMarkets } from "../../hooks/useGetMarkets";
 import { IMarket } from "../propTypes";
-import "./MarketTable.css";
+import "./MarketTable.scss";
 
 const MarketTable: React.FC = () => {
   const markets: IMarket[] = useGetMarkets();
 
   return (
-    <table className="market-table">
+    <Table className="market-table" striped bordered hover>
       <thead>
         <tr>
           <th>From</th>
@@ -37,7 +37,7 @@ const MarketTable: React.FC = () => {
           </tr>
         ))}
       </tbody>
-    </table>
+    </Table>
   );
 };
 

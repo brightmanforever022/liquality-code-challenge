@@ -1,6 +1,8 @@
 import React from 'react';
 import { QueryClient, QueryClientProvider } from "react-query";
-import MarketTable from './components/MarketTable/MarketTable';
+import Header from './components/Shared/Header';
+import MarketTable from './components/MarketTable';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.scss';
 
 const queryClient = new QueryClient();
@@ -8,6 +10,7 @@ const queryClient = new QueryClient();
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
+      <Header />
       <MarketTable />
     </QueryClientProvider>
   );
