@@ -14,6 +14,5 @@ export const useGetMarkets = () => {
     },
     { refetchInterval }
   );
-  console.log('query result: ', data);
   return data ? data.data : [];
 };
