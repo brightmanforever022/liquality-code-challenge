@@ -2,10 +2,13 @@ import React from "react";
 import { Table } from "react-bootstrap";
 import { useGetMarkets } from "../../hooks/useGetMarkets";
 import { IMarket } from "../propTypes";
-import "./MarketTable.scss";
 
-const MarketTable: React.FC = () => {
-  const markets: IMarket[] = useGetMarkets();
+export interface MarketTableProps {
+  period: number
+}
+const MarketTable: React.FC<MarketTableProps> = (props: MarketTableProps) => {
+  const { period } = props;
+  const markets: IMarket[] = useGetMarkets(period);
 
   return (
     <Table className="market-table" striped bordered hover>

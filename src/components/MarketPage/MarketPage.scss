@@ -1,0 +1,21 @@
+.interval-container,
+.market-table {
+  width: 90% !important;
+  margin: 0 auto;
+}
+
+.interval-container {
+  display: flex;
+  margin-bottom: 15px;
+  justify-content: flex-end;
+
+  label {
+    width: 150px;
+    margin-bottom: 0;
+    font-size: 20px;
+  }
+
+  select {
+    width: 100px;
+  }
+}
