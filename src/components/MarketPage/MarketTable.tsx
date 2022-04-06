@@ -20,7 +20,7 @@ const MarketTable: React.FC<MarketTableProps> = (props: MarketTableProps) => {
           <th>Status</th>
           <th>Max</th>
           <th>Min</th>
-          <th>minConf</th>
+          <th>MinConf</th>
           <th>UpdatedAt</th>
           <th>CreatedAt</th>
         </tr>

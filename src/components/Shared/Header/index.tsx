@@ -8,6 +8,9 @@ const Header: React.FC = () => {
       <p>
         This app gets marketing information associated with cryptocurrencies.
       </p>
+      <p>
+        You can change the period so that it changes the interval seconds for calling REST API.
+      </p>
     </div>
   )
 }
