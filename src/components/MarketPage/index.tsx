@@ -5,7 +5,7 @@ import MarketTable from "./MarketTable";
 import "./MarketPage.scss";
 
 const MarketPage: React.FC = () => {
-  const [period, setPeriod] = useState(5);
+  const [period, setPeriod] = useState(10);
   const changeInterval = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setPeriod(Number(event.target.value));
   }
